@@ -14,13 +14,13 @@ pipeline{
             }
              }
         } 
-        stage('Clean workspace'){
+        // stage('Clean workspace'){
 
-            steps{
-                script{
-                    cleanWs()
-                }
-            }
-        }
+        //     steps{
+        //         script{
+        //             cleanWs()
+        //         }
+        //     }
+        // }
     }
 }
