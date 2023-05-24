@@ -10,7 +10,7 @@ pipeline{
 
             script{
 
-            git branch: 'main', url: 'https://github.com/bienit/demo-counter-app.git'
+            git branch: 'main', url: 'https://github.com/bienit/gitops_argocd_project.git'
             }
              }
         } 
