@@ -18,8 +18,7 @@ pipeline{
 
             script{
                 git credentialsId: 'github',
-                url: 'https://github.com/bienit/gitops_argocd_project.git'
-            //withCredentials([gitUsernamePassword(credentialsId: 'github', gitToolName: 'Default')]) {
+                url: 'https://github.com/bienit/gitops_argocd_project.git',
                 branch: 'main'
                 }
             }
