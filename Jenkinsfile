@@ -9,6 +9,15 @@ pipeline{
     }
 
     stages{
+        
+        stage('Clean workspace'){
+
+            steps{
+                script{
+                    cleanWs()
+                }
+            }
+        }
 
         stage('Git Checkout'){
 
@@ -20,13 +29,6 @@ pipeline{
             }
              }
         } 
-        // stage('Clean workspace'){
 
-        //     steps{
-        //         script{
-        //             cleanWs()
-        //         }
-        //     }
-        // }
     }
 }
