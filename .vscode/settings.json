@@ -11,7 +11,7 @@
         "url": "https://8085-port-e5120827ff684caa.labs.kodekloud.com/",
         "user": "admin",
         "pass": "Adm!n321",
-        "useCrumbIssuer": true
+        "useCrumbIssuer": true,
     }
     }
 }
