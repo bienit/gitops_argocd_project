@@ -1,17 +1,17 @@
 {
     "jenkins-runner.jobs":{
-        "gitops-argocd_CI":{
+        "gitops-argocd":{
             "isDefault": true,
             "runWith": "jenkins-master",
-            "name": "gitops-argocd_CI"
+            "name": "gitops-argocd"
         }
     },
     "jenkins-runner.hostConfigs":{
-    "jenkins-master":{
-        "url": "https://8085-port-e5120827ff684caa.labs.kodekloud.com/",
-        "user": "admin",
-        "pass": "Adm!n321",
-        "useCrumbIssuer": true,
-    }
+     "jenkins-master":{
+             "url": "https://8085-port-e5120827ff684caa.labs.kodekloud.com/",
+             "user": "admin",
+             "pass": "Adm!n321",
+             "useCrumbIssuer": true
+        }
     }
 }
