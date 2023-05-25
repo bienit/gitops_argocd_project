@@ -3,14 +3,14 @@
         "gitops-argocd_CI":{
             "isDefault": true,
             "runWith": "jenkins-master",
-            "name": "giops-argocd_CI_2"
+            "name": "gitops-argocd_CI"
         }
     },
     "jenkins-runner.hostConfigs":{
     "jenkins-master":{
-        "url": "http://192.168.129.191:8080",
+        "url": "https://8085-port-e5120827ff684caa.labs.kodekloud.com/",
         "user": "admin",
-        "pass": "admin",
+        "pass": "Adm!n321",
         "useCrumbIssuer": true
     }
     }
