@@ -11,6 +11,7 @@
         "url": "http://192.168.129.191:8080",
         "user": "admin",
         "pass": "admin",
+        
         "useCrumbIssuer": true
     }
     }
