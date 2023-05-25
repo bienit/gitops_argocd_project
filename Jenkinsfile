@@ -14,11 +14,14 @@ pipeline{
 
         stage('Git Checkout'){
 
-            steps{
+        steps{
 
             script{
-
-            git branch: 'main', url: 'https://github.com/bienit/gitops_argocd_project.git'
+                git credentialsId: 'github',
+                url: 'https://github.com/bienit/gitops_argocd_project.git'
+            //withCredentials([gitUsernamePassword(credentialsId: 'github', gitToolName: 'Default')]) {
+                branch: 'main'
+}
             }
             }
         } 
