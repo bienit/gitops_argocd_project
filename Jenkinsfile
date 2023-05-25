@@ -21,10 +21,9 @@ pipeline{
                 url: 'https://github.com/bienit/gitops_argocd_project.git'
             //withCredentials([gitUsernamePassword(credentialsId: 'github', gitToolName: 'Default')]) {
                 branch: 'main'
-}
+                }
             }
             }
-        } 
+    } 
 
-    }
 }
