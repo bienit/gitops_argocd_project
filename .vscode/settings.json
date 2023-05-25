@@ -2,12 +2,12 @@
     "jenkins-runner.jobs":{
         "gitops-argocd_CI":{
             "isDefault": true,
-            "runWith": "jenkins-maste1",
+            "runWith": "jenkins-master",
             "name": "giops-argocd_CI_2"
         }
     },
     "jenkins-runner.hostConfigs":{
-    "jenkins-master1":{
+    "jenkins-master":{
         "url": "http://192.168.129.191:8080",
         "user": "admin",
         "pass": "admin",
