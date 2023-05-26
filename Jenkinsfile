@@ -66,21 +66,22 @@ pipeline{
             }
         }
 
-        // stage('Push the changed deployment file to Git'){
-        //     steps{
-        //         script{
-        //             sh """
-        //                git config --global user.name "bienit"
-        //                git config --global user.email "biendtvt@gmail.com" 
-        //                git add deployment.yml
-        //                git commit -m "updated the deployment file"
-        //                    withCredentials([gitUsernamePassword(credentialsId: 'github', gitToolName: 'Default')]) {
-        //                    sh "git push https://github.com/bienit/gitops_argocd_project.git main"
-        //                  }
-
-        //         }
-        //     }
-        // }
+        stage('Push the changed deployment file to Git'){
+            steps{
+                script{
+                    sh """
+                       git config --global user.name "bienit"
+                       git config --global user.email "biendtvt@gmail.com" 
+                       git add deployment.yml
+                       git commit -m "updated the deployment file"
+                       """
+                       withCredentials([gitUsernamePassword(credentialsId: 'github', gitToolName: 'Default')]) {
+                           sh "git push https://github.com/bienit/gitops_argocd_project.git main"
+                         }
+                        
+                }
+            }
+        }
 
     } 
 
