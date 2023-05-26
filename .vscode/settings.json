@@ -8,7 +8,7 @@
     },
     "jenkins-runner.hostConfigs":{
      "jenkins-master":{
-             "url": "https://github.com/bienit/gitops_argocd_project.git",
+             "url": "http://192.168.129.191:8080",
              "user": "admin",
              "pass": "admin",
              "useCrumbIssuer": true
