@@ -8,9 +8,9 @@
     },
     "jenkins-runner.hostConfigs":{
      "jenkins-master":{
-             "url": "https://8085-port-e5120827ff684caa.labs.kodekloud.com/",
+             "url": "https://github.com/bienit/gitops_argocd_project.git",
              "user": "admin",
-             "pass": "Adm!n321",
+             "pass": "admin",
              "useCrumbIssuer": true
         }
     }
